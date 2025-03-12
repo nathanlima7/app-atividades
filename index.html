@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Escolares</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                    console.log('Service Worker registrado com sucesso:', registration);
+                }, function(error) {
+                    console.log('Falha ao registrar o Service Worker:', error);
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Atividade de Fundamentos da Tecnologia da Informação</h2>
+        <label for="">Nome: <input type="text" id="nomeAluno" required></label>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. O que é um software de sistema?</p>
+                <label><input type="radio" name="q1" value="a) Um programa que auxilia na criação de documentos e planilhas."> a) Um programa que auxilia na criação de documentos e planilhas.</label><br>
+                <label><input type="radio" name="q1" value="b) Um sistema que gerencia os recursos do computador."> b) Um sistema que gerencia os recursos do computador.</label><br>
+                <label><input type="radio" name="q1" value="c) Um antivírus que protege contra ameaças cibernéticas."> c) Um antivírus que protege contra ameaças cibernéticas.</label><br>
+                <label><input type="radio" name="q1" value="d) Um aplicativo de redes sociais."> d) Um aplicativo de redes sociais.</label>
+            </div>
+            
+            <div class="question">
+                <p>2. Qual das alternativas apresenta apenas dispositivos de saída?</p>
+                <label><input type="radio" name="q2" value="a) Teclado e mouse."> a) Teclado e mouse.</label><br>
+                <label><input type="radio" name="q2" value="b) Monitor e impressora."> b) Monitor e impressora.</label><br>
+                <label><input type="radio" name="q2" value="c) Scanner e microfone."> c) Scanner e microfone.</label><br>
+                <label><input type="radio" name="q2" value="d) Processador e memória RAM."> d) Processador e memória RAM.</label>
+            </div>
+            
+            <div class="question">
+                <p>3. Qual das opções abaixo NÃO é um protocolo de rede?</p>
+                <label><input type="radio" name="q3" value="a) HTTP."> a) HTTP.</label><br>
+                <label><input type="radio" name="q3" value="b) TCP/IP."> b) TCP/IP.</label><br>
+                <label><input type="radio" name="q3" value="c) BIOS."> c) BIOS.</label><br>
+                <label><input type="radio" name="q3" value="d) FTP."> d) FTP.</label>
+            </div>
+            
+            <div class="question">
+                <p>4. A principal vantagem do SSD em relação ao HDD é:</p>
+                <label><input type="radio" name="q4" value="a) Maior velocidade e durabilidade."> a) Maior velocidade e durabilidade.</label><br>
+                <label><input type="radio" name="q4" value="b) Maior capacidade de armazenamento."> b) Maior capacidade de armazenamento.</label><br>
+                <label><input type="radio" name="q4" value="c) Menor custo por gigabyte."> c) Menor custo por gigabyte.</label><br>
+                <label><input type="radio" name="q4" value="d) Maior tempo de inicialização."> d) Maior tempo de inicialização.</label>
+            </div>
+            
+            <div class="question">
+                <p>5. O que caracteriza um banco de dados NoSQL?</p>
+                <label><input type="radio" name="q5" value="a) Ele é baseado em tabelas relacionais."> a) Ele é baseado em tabelas relacionais.</label><br>
+                <label><input type="radio" name="q5" value="b) Ele não utiliza linguagens de consulta estruturadas."> b) Ele não utiliza linguagens de consulta estruturadas.</label><br>
+                <label><input type="radio" name="q5" value="c) Ele só pode armazenar pequenos volumes de dados."> c) Ele só pode armazenar pequenos volumes de dados.</label><br>
+                <label><input type="radio" name="q5" value="d) Ele depende exclusivamente do SQL para manipulação de dados."> d) Ele depende exclusivamente do SQL para manipulação de dados.</label>
+            </div>
+            
+            <div class="question">
+                <p>6. O que é computação em nuvem?</p>
+                <label><input type="radio" name="q6" value="a) Um sistema de armazenamento físico dentro de empresas."> a) Um sistema de armazenamento físico dentro de empresas.</label><br>
+                <label><input type="radio" name="q6" value="b) Um modelo de fornecimento de recursos computacionais via internet."> b) Um modelo de fornecimento de recursos computacionais via internet.</label><br>
+                <label><input type="radio" name="q6" value="c) Um tipo de sistema operacional baseado em nuvens de armazenamento."> c) Um tipo de sistema operacional baseado em nuvens de armazenamento.</label><br>
+                <label><input type="radio" name="q6" value="d) Um método de criptografia de dados."> d) Um método de criptografia de dados.</label>
+            </div>
+            
+            <div class="question">
+                <p>7. Na segurança da informação, a integridade significa:</p>
+                <label><input type="radio" name="q7" value="a) Proteger dados contra acessos não autorizados."> a) Proteger dados contra acessos não autorizados.</label><br>
+                <label><input type="radio" name="q7" value="b) Garantir que os dados estejam sempre acessíveis."> b) Garantir que os dados estejam sempre acessíveis.</label><br>
+                <label><input type="radio" name="q7" value="c) Assegurar que a informação não seja alterada indevidamente."> c) Assegurar que a informação não seja alterada indevidamente.</label><br>
+                <label><input type="radio" name="q7" value="d) Bloquear o acesso a arquivos infectados por vírus."> d) Bloquear o acesso a arquivos infectados por vírus.</label>
+            </div>
+            
+            <div class="question">
+                <p>8. Qual das seguintes aplicações utiliza Inteligência Artificial?</p>
+                <label><input type="radio" name="q8" value="a) Bloco de notas."> a) Bloco de notas.</label><br>
+                <label><input type="radio" name="q8" value="b) Editor de imagens básico."> b) Editor de imagens básico.</label><br>
+                <label><input type="radio" name="q8" value="c) Assistentes virtuais como Alexa e Google Assistant."> c) Assistentes virtuais como Alexa e Google Assistant.</label><br>
+                <label><input type="radio" name="q8" value="d) Calculadora padrão."> d) Calculadora padrão.</label>
+            </div>
+            
+            <div class="question">
+                <p>9. O que diferencia uma rede LAN de uma WAN?</p>
+                <label><input type="radio" name="q9" value="a) LAN cobre longas distâncias, enquanto WAN cobre curtas distâncias."> a) LAN cobre longas distâncias, enquanto WAN cobre curtas distâncias.</label><br>
+                <label><input type="radio" name="q9" value="b) LAN é uma rede local e restrita, enquanto WAN cobre grandes áreas."> b) LAN é uma rede local e restrita, enquanto WAN cobre grandes áreas.</label><br>
+                <label><input type="radio" name="q9" value="c) LAN usa protocolo TCP/IP, enquanto WAN usa apenas Wi-Fi."> c) LAN usa protocolo TCP/IP, enquanto WAN usa apenas Wi-Fi.</label><br>
+                <label><input type="radio" name="q9" value="d) LAN depende da internet, enquanto WAN é independente."> d) LAN depende da internet, enquanto WAN é independente.</label>
+            </div>
+            <div class="question">
+                <p>10. Por que o protocolo TCP/IP é essencial para a Internet?</p>
+                <label><input type="radio" name="q10" value="a) Ele permite apenas a navegação segura."> a) Ele permite apenas a navegação segura.</label><br>
+                <label><input type="radio" name="q10" value="b) Ele controla o acesso aos servidores de e-mail."> b) Ele controla o acesso aos servidores de e-mail.</label><br>
+                <label><input type="radio" name="q10" value="c) Ele define padrões para transmissão de dados na rede."> c) Ele define padrões para transmissão de dados na rede.</label><br>
+                <label><input type="radio" name="q10" value="d) Ele bloqueia o tráfego de dados suspeitos."> d) Ele bloqueia o tráfego de dados suspeitos.</label>
+            </div>
+            
+            <button type="button" onclick="enviarRespostas()">Finalizar atividade</button>
+        </form>
+    </div>
+
+    <script>
+        function enviarRespostas() {
+            let nomeAluno = document.getElementById('nomeAluno').value.trim();
+            if (!nomeAluno) {
+                alert('Por favor, insira seu nome antes de enviar.');
+                return;
+            }
+
+            let respostas = [`Nome: ${nomeAluno}`];
+            let perguntas = document.querySelectorAll('.question');
+            
+            perguntas.forEach((pergunta, index) => {
+                let selecionado = pergunta.querySelector('input:checked');
+                let resposta = selecionado ? selecionado.value : 'Não respondido';
+                respostas.push(`Pergunta ${index + 1}: ${resposta}`);
+            });
+            
+            let mensagem = encodeURIComponent(respostas.join('\n'));
+            let numeroWhatsApp = "5586999816098";
+            let url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
